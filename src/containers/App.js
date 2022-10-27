@@ -26,6 +26,9 @@ class App extends Component {
           .includes(this.state.searchValue?.toLowerCase()) ||
         senior.language
           ?.toLowerCase()
+          .includes(this.state.searchValue?.toLowerCase()) ||
+        senior.position
+          ?.toLowerCase()
           .includes(this.state.searchValue?.toLowerCase())
       );
     });

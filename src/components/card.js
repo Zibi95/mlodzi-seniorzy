@@ -1,5 +1,4 @@
 import React from "react";
-import "./components.css";
 import linkedin from "../svg/linkedin.svg";
 import github from "../svg/github.svg";
 

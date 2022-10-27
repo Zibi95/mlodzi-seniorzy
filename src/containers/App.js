@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import CardList from "../components/card-list";
+import Navbar from "../components/nav-bar";
 import { seniors } from "../seniors";
+import "./App.css";
 
 class App extends Component {
   constructor() {
@@ -8,7 +10,12 @@ class App extends Component {
   }
 
   render() {
-    return <CardList seniors={seniors} />;
+    return (
+      <div>
+        <Navbar />
+        <CardList seniors={seniors} />
+      </div>
+    );
   }
 }
 

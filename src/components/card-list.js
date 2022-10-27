@@ -15,7 +15,7 @@ const CardList = ({ seniors }) => {
     );
   });
 
-  return <div>{seniorsArray}</div>;
+  return <div className="card-container">{seniorsArray}</div>;
 };
 
 export default CardList;

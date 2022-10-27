@@ -4,7 +4,7 @@ import linkedin from "../svg/linkedin.svg";
 import github from "../svg/github.svg";
 
 const Card = ({ nickname, position, language, git, link }) => {
-  const logo = require(`../avatars/${nickname?.toLowerCase()}.png`);
+  const logo = require(`../logos/${nickname?.toLowerCase()}.png`);
   const program = require(`../svg/${language?.toLowerCase()}.png`);
   const initial = nickname?.slice(0, 1);
   return (

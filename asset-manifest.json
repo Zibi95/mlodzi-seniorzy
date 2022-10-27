@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Zibi95/mlodzi-seniorzy/static/css/main.c5f9e864.css",
+    "main.js": "/Zibi95/mlodzi-seniorzy/static/js/main.9c47d1c5.js",
+    "static/js/787.366b558b.chunk.js": "/Zibi95/mlodzi-seniorzy/static/js/787.366b558b.chunk.js",
+    "static/media/mlody-senior.png": "/Zibi95/mlodzi-seniorzy/static/media/mlody-senior.1888b95005fcc3b9e8c5.png",
+    "static/media/luftie.png": "/Zibi95/mlodzi-seniorzy/static/media/luftie.e6884c1325127b7e2c7d.png",
+    "static/media/pixel.png": "/Zibi95/mlodzi-seniorzy/static/media/pixel.2dc2b25520bd7e38f067.png",
+    "static/media/daro.png": "/Zibi95/mlodzi-seniorzy/static/media/daro.b18f81b8625abdfa9675.png",
+    "static/media/zibi.png": "/Zibi95/mlodzi-seniorzy/static/media/zibi.616139a8426fbbaa0353.png",
+    "static/media/javascript.png": "/Zibi95/mlodzi-seniorzy/static/media/javascript.266bd9fb2663dcc057b4.png",
+    "static/media/github.svg": "/Zibi95/mlodzi-seniorzy/static/media/github.270355320eb902e3dda3224b8389c2ac.svg",
+    "static/media/linkedin.svg": "/Zibi95/mlodzi-seniorzy/static/media/linkedin.e6878bacaaafdfaeaf30fe286d6bdc9e.svg",
+    "index.html": "/Zibi95/mlodzi-seniorzy/index.html",
+    "main.c5f9e864.css.map": "/Zibi95/mlodzi-seniorzy/static/css/main.c5f9e864.css.map",
+    "main.9c47d1c5.js.map": "/Zibi95/mlodzi-seniorzy/static/js/main.9c47d1c5.js.map",
+    "787.366b558b.chunk.js.map": "/Zibi95/mlodzi-seniorzy/static/js/787.366b558b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5f9e864.css",
+    "static/js/main.9c47d1c5.js"
+  ]
+}

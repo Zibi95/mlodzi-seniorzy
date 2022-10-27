@@ -1,0 +1,182 @@
+/* card */
+.card {
+  font-family: "Times New Roman", Times, serif;
+  padding: 1em;
+  display: flex;
+  width: fit-content;
+  flex-basis: auto;
+  height: 400px;
+  border-radius: 10px;
+  background-color: #74ebd5;
+  background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+  transition: all 0.5s;
+  border: 2px solid black;
+  -webkit-box-shadow: 0px 14px 24px -5px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 14px 24px -5px rgba(66, 68, 90, 1);
+  box-shadow: 0px 14px 24px -5px rgba(66, 68, 90, 1);
+}
+
+.card:hover {
+  scale: 1.1;
+  background-size: 300% 300%;
+  background-image: linear-gradient(90deg, #5fe9cf 0%, #5f77df 100%);
+  animation: AnimateBG 4s ease infinite;
+  -webkit-box-shadow: 0px 14px 24px 1px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 14px 24px 1px rgba(66, 68, 90, 1);
+  box-shadow: 0px 14px 24px 1px rgba(66, 68, 90, 1);
+}
+
+/* corners */
+.card-corners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-corners img {
+  width: 1.5em;
+}
+
+.card-corners p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.bottom {
+  place-self: end;
+}
+
+.bottom img {
+  margin-bottom: 0.5em;
+}
+.top img {
+  margin-top: 0.5em;
+}
+/* card content */
+
+.hidden {
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card-info p {
+  flex-direction: column;
+  display: flex;
+  font-size: 18px;
+  opacity: 0;
+}
+
+.card:hover .card-info p {
+  opacity: 1;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid yellow; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.user-logo {
+  width: 7em;
+  margin: 2em;
+  border-radius: 100%;
+  background-color: black;
+}
+
+.user-logo:hover {
+  scale: 1.2;
+}
+
+.name {
+  font-size: 36px;
+}
+
+.socials {
+  margin-top: 3em;
+  display: flex;
+  gap: 2em;
+}
+
+.socials img {
+  width: 2em;
+}
+
+.socials img:hover {
+  animation: 1s spin;
+  border-radius: 100%;
+}
+
+/* animations */
+
+/* background animation */
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* spin */
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}

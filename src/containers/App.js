@@ -1,4 +1,5 @@
 import { Component } from "react";
+import Card from "../components/card";
 
 class App extends Component {
   constructor() {
@@ -6,7 +7,7 @@ class App extends Component {
   }
 
   render() {
-    return <h1>Hey</h1>;
+    return <Card />;
   }
 }
 

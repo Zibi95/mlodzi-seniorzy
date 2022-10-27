@@ -1,38 +1,38 @@
+import React from "react";
 import "./components.css";
 import linkedin from "../svg/linkedin.svg";
 import github from "../svg/github.svg";
 
-const Card = () => {
-  const logo = require("../avatars/python.png");
-  const program = require("../svg/javascript.png");
-
+const Card = ({ nickname, position, language, git, link }) => {
+  const logo = require(`../avatars/${nickname?.toLowerCase()}.png`);
+  const program = require(`../svg/${language?.toLowerCase()}.png`);
+  const initial = nickname?.slice(0, 1);
   return (
     <div className="card">
       <div className="card-corners top">
-        <p>Z</p>
-        <img src={program} alt="javascript logo" />
+        <p>{initial}</p>
+        <img src={program} alt="program logo" />
       </div>
       <div className="card-info">
-        <img className="user-logo" src={logo} alt="yo" />
-        <h2 className="name">Zibi</h2>
+        <img className="user-logo" src={logo} alt="logo" />
+        <h2 className="name">{nickname}</h2>
         <p>
-          Front End Developer
-          <span>
-            <b>Language:</b> JavaScript
-          </span>
+          {position}
+          <br />
+          <b>Language:</b> {language}
         </p>
         <div className="socials">
-          <a href="#/">
+          <a href={link} target="_blank" rel="noreferrer">
             <img src={linkedin} alt="linkedin link" />
           </a>
-          <a href="#/">
+          <a href={git} target="_blank" rel="noreferrer">
             <img src={github} alt="github link" />
           </a>
         </div>
       </div>
       <div className="card-corners bottom">
-        <img src={program} alt="javascript logo" />
-        <p>Z</p>
+        <img src={program} alt="program logo" />
+        <p>{initial}</p>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
-import { Component } from "react";
-import Card from "../components/card";
+import React, { Component } from "react";
+import CardList from "../components/card-list";
+import { seniors } from "../seniors";
 
 class App extends Component {
   constructor() {
@@ -7,7 +8,7 @@ class App extends Component {
   }
 
   render() {
-    return <Card />;
+    return <CardList seniors={seniors} />;
   }
 }
 

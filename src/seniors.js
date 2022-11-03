@@ -40,4 +40,12 @@ export const seniors = [
     githubAcc: "https://github.com/DariuszPazdur17",
     linkedinAcc: "https://www.linkedin.com/in/dariusz-pazdur-050223236/ ",
   },
+  {
+    id: 6,
+    nickname: "Karolka",
+    position: "Mobile sDeveloper",
+    language: "Python",
+    githubAcc: "https://github.com/KarolinaWenta",
+    linkedinAcc: "https://www.linkedin.com/in/karolina-wenta-76b275252/ ",
+  },
 ];

@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/mlodzi-seniorzy/static/css/main.c5f9e864.css",
-    "main.js": "/mlodzi-seniorzy/static/js/main.26914b2a.js",
+    "main.js": "/mlodzi-seniorzy/static/js/main.72f3b7cc.js",
     "static/js/787.366b558b.chunk.js": "/mlodzi-seniorzy/static/js/787.366b558b.chunk.js",
     "static/media/karolka.png": "/mlodzi-seniorzy/static/media/karolka.4cedbf25b90678fe735f.png",
-    "static/media/ynzcrom.png": "/mlodzi-seniorzy/static/media/ynzcrom.80e0f1203fac5aa31c46.png",
+    "static/media/ynzcorm.png": "/mlodzi-seniorzy/static/media/ynzcorm.80e0f1203fac5aa31c46.png",
     "static/media/mlody-senior.png": "/mlodzi-seniorzy/static/media/mlody-senior.1888b95005fcc3b9e8c5.png",
     "static/media/luftie.png": "/mlodzi-seniorzy/static/media/luftie.84563a621cb68700e9db.png",
     "static/media/pixel.png": "/mlodzi-seniorzy/static/media/pixel.220bf9ca3ee8a2388a98.png",
@@ -14,11 +14,11 @@
     "static/media/linkedin.svg": "/mlodzi-seniorzy/static/media/linkedin.f8b31085462fb83ad3805eed005e1dfe.svg",
     "index.html": "/mlodzi-seniorzy/index.html",
     "main.c5f9e864.css.map": "/mlodzi-seniorzy/static/css/main.c5f9e864.css.map",
-    "main.26914b2a.js.map": "/mlodzi-seniorzy/static/js/main.26914b2a.js.map",
+    "main.72f3b7cc.js.map": "/mlodzi-seniorzy/static/js/main.72f3b7cc.js.map",
     "787.366b558b.chunk.js.map": "/mlodzi-seniorzy/static/js/787.366b558b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c5f9e864.css",
-    "static/js/main.26914b2a.js"
+    "static/js/main.72f3b7cc.js"
   ]
 }

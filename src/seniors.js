@@ -48,4 +48,12 @@ export const seniors = [
     githubAcc: "https://github.com/KarolinaWenta",
     linkedinAcc: "https://www.linkedin.com/in/karolina-wenta-76b275252/ ",
   },
+  {
+    id: 7,
+    nickname: "YnzcroM",
+    position: "Front End Developer",
+    language: "JavaScript",
+    githubAcc: "https://github.com/YnzcorM",
+    linkedinAcc: "https://www.linkedin.com/in/jakub-szysz-88b649265/ ",
+  },
 ];

@@ -20,7 +20,7 @@ If you are a participant of the course, below is a step-by-step guide on how to 
 3. Click the "Clone or Download" button and copy the URL to the repository.
 ![Group 1](https://user-images.githubusercontent.com/78635631/217917645-20281405-7c3a-41f8-bdb6-bf0b3110d6b4.png)
 
-4. Open the terminal and type in the following command: git clone <copied url>
+4. Open the terminal and type in the following command: git clone "copierd url"
 
 5. After cloning the repository on your local machine, type in cd mlodzi-seniorzy/
   

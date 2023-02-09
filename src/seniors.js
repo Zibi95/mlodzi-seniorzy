@@ -49,10 +49,10 @@ export const seniors = [
   },
   {
     id: 7,
-    nickname: 'YnzcroM',
-    position: 'Front End Developer',
-    language: 'JavaScript',
-    githubAcc: 'https://github.com/YnzcorM',
-    linkedinAcc: 'https://www.linkedin.com/in/jakub-szysz-88b649265/ ',
+    nickname: "YnzcorM",
+    position: "Front End Developer",
+    language: "JavaScript",
+    githubAcc: "https://github.com/YnzcorM",
+    linkedinAcc: "https://www.linkedin.com/in/jakub-szysz-88b649265/ ",
   },
 ];

@@ -32,9 +32,9 @@ If you are a participant of the course, below is a step-by-step guide on how to 
   
 8. Go back to the terminal and execute the following commands to update your repository:
 
-git add .
-git commit -m "Your message"
-git push
+- git add .
+- git commit -m "Your message"
+- git push
 
 9. Go back to the main repository page and click the "New pull request" button.
 

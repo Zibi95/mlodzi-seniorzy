@@ -41,3 +41,6 @@ If you are a participant of the course, below is a step-by-step guide on how to 
 10. Go to the compare page and confirm your changes.
 
 11. Click the "Create pull request" button and submit it.
+
+
+### Find out more about contributing to project here: https://docs.github.com/en/get-started/quickstart/contributing-to-projects

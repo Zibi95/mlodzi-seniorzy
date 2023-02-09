@@ -50,7 +50,7 @@ export const seniors = [
   },
   {
     id: 7,
-    nickname: "YnzcroM",
+    nickname: "YnzcorM",
     position: "Front End Developer",
     language: "JavaScript",
     githubAcc: "https://github.com/YnzcorM",

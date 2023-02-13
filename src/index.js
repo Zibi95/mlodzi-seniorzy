@@ -1,13 +1,24 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./containers/App";
-import reportWebVitals from "./reportWebVitals";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import reportWebVitals from './reportWebVitals';
+// Redux
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import { searchSeniors } from './reducer';
+// styling
+import './index.css';
+// Component
+import App from './containers/App';
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+// Redux store creation
+const store = createStore(searchSeniors);
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>
 );
 

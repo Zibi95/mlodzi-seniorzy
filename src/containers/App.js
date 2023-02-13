@@ -1,42 +1,45 @@
-import React, { Component } from 'react';
+import React from 'react';
+// components
 import CardList from '../components/card-list';
 import Navbar from '../components/nav-bar';
 import SearchBox from '../components/search-box';
 import Scroll from '../components/scroll';
+// redux
+import { connect } from 'react-redux';
+import { setSearchField } from '../action';
+// seniors object
 import { seniors } from '../seniors';
+// styling
 import './App.css';
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      seniors: seniors,
-      searchValue: '',
-    };
-  }
-
-  onSearchChange = event => {
-    this.setState({ searchValue: event.target.value });
+// REDUX Functions
+const mapStateToProps = state => {
+  return {
+    searchField: state.searchField,
   };
+};
+const mapDispatchToProps = dispatch => {
+  return { onSearchChange: event => dispatch(setSearchField(event.target.value)) };
+};
 
-  render() {
-    const filteredSeniors = this.state.seniors.filter(senior => {
-      return (
-        senior.nickname?.toLowerCase().includes(this.state.searchValue?.toLowerCase()) ||
-        senior.language?.toLowerCase().includes(this.state.searchValue?.toLowerCase()) ||
-        senior.position?.toLowerCase().includes(this.state.searchValue?.toLowerCase())
-      );
-    });
+const App = ({ searchField, onSearchChange }) => {
+  const filteredSeniors = seniors.filter(senior => {
     return (
-      <div>
-        <Navbar />
-        <SearchBox searchChange={this.onSearchChange} />
-        <Scroll>
-          <CardList seniors={filteredSeniors} />
-        </Scroll>
-      </div>
+      senior.nickname?.toLowerCase().includes(searchField?.toLowerCase()) ||
+      senior.language?.toLowerCase().includes(searchField?.toLowerCase()) ||
+      senior.position?.toLowerCase().includes(searchField?.toLowerCase())
     );
-  }
-}
+  });
 
-export default App;
+  return (
+    <div>
+      <Navbar />
+      <SearchBox searchChange={onSearchChange} />
+      <Scroll>
+        <CardList seniors={filteredSeniors} />
+      </Scroll>
+    </div>
+  );
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

@@ -1,5 +1,5 @@
-card .card {
-  font-family: "Times New Roman", Times, serif;
+.card {
+  font-family: 'Times New Roman', Times, serif;
   padding: 1em;
   display: flex;
   width: fit-content;
@@ -32,7 +32,7 @@ card .card {
 }
 
 .card-corners img {
-  width: 1.5em;
+  background: transparent;
 }
 
 .card-corners p {
@@ -75,6 +75,7 @@ card .card {
 }
 
 .user-logo {
+  transition: all 0.5s ease-out;
   width: 100px;
   margin: 2em;
   border-radius: 100%;

@@ -1,8 +1,8 @@
-import Card from "./card";
-import React from "react";
+import Card from './card';
+import React from 'react';
 
 const CardList = ({ seniors }) => {
-  const seniorsArray = seniors.map((senior) => {
+  const seniorsArray = seniors.map(senior => {
     return (
       <Card
         key={senior.id}

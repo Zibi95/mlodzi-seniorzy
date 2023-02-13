@@ -1,10 +1,14 @@
-import React from "react";
-import logo from "../mlody-senior.png";
+import React from 'react';
+import logo from '../mlody-senior.png';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <img className="logo" src={logo} alt="logo" />
+      <img
+        className="logo"
+        src={logo}
+        alt="logo"
+      />
       <h1>Młodzi seniorzy</h1>
     </nav>
   );

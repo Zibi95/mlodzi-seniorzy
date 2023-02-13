@@ -9,7 +9,7 @@ const Navbar = () => {
         src={logo}
         alt="logo"
       />
-      <h1>Młodzi seniorzy</h1>
+      <h1 className="header">Młodzi seniorzy</h1>
     </nav>
   );
 };

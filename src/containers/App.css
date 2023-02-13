@@ -1,6 +1,6 @@
 /* card */
 .card {
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   padding: 1em;
   display: flex;
   width: fit-content;
@@ -61,18 +61,18 @@
   flex-wrap: wrap;
 }
 
-.card-info p {
+.card-info span {
   font-size: 18px;
   opacity: 0;
 }
 
-.card:hover .card-info p {
+.card:hover .card-info span {
   opacity: 1;
   overflow: hidden;
   border-right: 0.15em solid yellow;
   white-space: nowrap;
   margin: 0 auto;
-  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 2s steps(40, end), blink-caret 1s step-end infinite;
 }
 
 .user-logo {
@@ -81,6 +81,7 @@
   border-radius: 100%;
   background-color: black;
   object-fit: cover;
+  transition: all 0.5s;
 }
 
 .user-logo:hover {
@@ -221,4 +222,11 @@
 
 .search:focus {
   scale: 1.1;
+}
+
+.scroll {
+  height: 47em;
+  border: 3px solid black;
+  overflow-y: scroll;
+  padding: 2em;
 }

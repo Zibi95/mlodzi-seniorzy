@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CardList from '../components/card-list';
 import Navbar from '../components/nav-bar';
 import SearchBox from '../components/search-box';
+import Scroll from '../components/scroll';
 import { seniors } from '../seniors';
 import './App.css';
 
@@ -30,7 +31,9 @@ class App extends Component {
       <div>
         <Navbar />
         <SearchBox searchChange={this.onSearchChange} />
-        <CardList seniors={filteredSeniors} />
+        <Scroll>
+          <CardList seniors={filteredSeniors} />
+        </Scroll>
       </div>
     );
   }

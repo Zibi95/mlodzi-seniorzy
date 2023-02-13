@@ -1,7 +1,6 @@
 import React from 'react';
 import linkedin from '../svg/linkedin.svg';
 import github from '../svg/github.svg';
-import './components.css';
 
 const Card = ({ nickname, position, language, git, link }) => {
   const logo = require(`../logos/${nickname?.toLowerCase()}.png`);
@@ -23,11 +22,11 @@ const Card = ({ nickname, position, language, git, link }) => {
           alt="logo"
         />
         <h2 className="name">{nickname}</h2>
-        <p>
-          {position}
-          <br />
+
+        <span>{position}</span>
+        <span>
           <b>Language:</b> {language}
-        </p>
+        </span>
         <div className="socials">
           <a
             href={link}
